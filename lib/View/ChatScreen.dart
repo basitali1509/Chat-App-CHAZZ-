@@ -72,8 +72,6 @@ class ChatScreen extends StatelessWidget {
           .collection('chats')
           .doc(fileName)
           .update({"message": imageUrl});
-
-      print(imageUrl);
     }
   }
 
@@ -140,13 +138,13 @@ class ChatScreen extends StatelessWidget {
                   alignment: Alignment.bottomRight,
                   children: [
                     const CircleAvatar(
+                      radius: 18,
+                      backgroundColor: Colors.white,
                       child: Icon(
                         Icons.person,
                         color: Colors.black87,
                         size: 22,
                       ),
-                      radius: 18,
-                      backgroundColor: Colors.white,
                     ),
                     snapshot.data!['status'] == 'Online' && isLogin
                         ? const Icon(
@@ -269,6 +267,7 @@ class ChatScreen extends StatelessWidget {
                               color: Colors.white,
                             ),
                             onPressed: () {
+                              onSendMessage();
                               FocusScope.of(context).unfocus();
                             }),
                       ],
