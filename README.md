@@ -1,4 +1,4 @@
-# chat_app
+# CHAZZ - Chatting App
 
 Chatting Application
 
