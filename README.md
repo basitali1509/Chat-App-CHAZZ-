@@ -1,6 +1,6 @@
 # CHAZZ - Chatting App
 
-Chatting Application
+![image](https://res.cloudinary.com/dyduvs3s5/image/upload/v1688323450/wgfzjatxuw7krgggorf4.png)
 
 # About App
 A chatting application using Flutter and Firebase.
